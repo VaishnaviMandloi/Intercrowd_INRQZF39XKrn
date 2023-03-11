@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            margin: 0;
+            padding: 3px;
+            height: 20vh;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 30px;
+            padding: 25px;
+        }
+        #icon{
+            max-width: 15vw;
+            max-height: 10vh;
+            margin: 30px;
+        }
+        .li1{
+            color: aliceblue;
+            margin: 20px;
+            font-size: large;
+            list-style: none;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .img{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllqRRiHvSTdhEA8wwde_ZBt5OySQbB4ocOg&usqp=CAU');
+            width: 100vw;
+            height: 20vh;
+        }
+        .d{
+            width: 15vw;
+            margin: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+                <div id="img"><img id="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyiflEr-YdIvk4R5CZia7_9P0ENlmAyU-9FA&usqp=CAU" alt="img icon"></div>
+            <ul>
+                <li class="li1">Home</li>
+                <li class="li1">About</li>
+                <li class="li1">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="img"></div>
+        <div class="left"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMJ205-1Hf_P3Ui0P4TuBNzYsOvr3EMBDpQ10O02y8cP3EQ36xw0pfxEmqSCf_MNJJK8&usqp=CAU" alt=""></div>
+        <div class="middle"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEG6eGOYs-iGwKJLNt4NU7kYQOYwS9dW6LCg&usqp=CAU" alt=""></div>
+        <div class="right"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WXLdKwTn08gPdsTpA9BiNkVLGUHJ09uTRZaJdvgCJRKMhmoOuM5WpDH-yN0ita5s-DY&usqp=CAU" alt=""></div>
+    </div>
+    </div>
+</body>
+</html>
