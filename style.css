@@ -1,0 +1,99 @@
+
+:root{
+    --main-bg-color: brown ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 15vh;
+    background-color: var(--main-bg-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0 3vw;
+    min-height: 75px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-size: larger;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 2.1vh 1vw;
+}
+.search input{
+    width: 40vw;
+    height: 4vh;
+    border-radius: 5px;
+    min-height: 20px;
+}
+nav ul {
+    height: 10vh;
+    min-width: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 2vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.container{
+    min-height: calc( 100vh - 16vh - 5vh);
+}
+.slider{
+    margin: 1vh auto;
+    width: 80vw;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.card{
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--main-bg-color);
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: scroll;
+    background-color: blanchedalmond;
+}
+.card-items{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+footer{
+    background-color:var(--main-bg-color);
+    color: blanchedalmond;
+    height: 5vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

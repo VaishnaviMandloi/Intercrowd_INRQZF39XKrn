@@ -1,78 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            margin: 0;
-            padding: 3px;
-            height: 20vh;
-            width: 100%;
-            background-color: blueviolet;
-        }
-        nav{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-right: 30px;
-            padding: 25px;
-        }
-        #icon{
-            max-width: 15vw;
-            max-height: 10vh;
-            margin: 30px;
-        }
-        .li1{
-            color: aliceblue;
-            margin: 20px;
-            font-size: large;
-            list-style: none;
-        }
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .img{
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllqRRiHvSTdhEA8wwde_ZBt5OySQbB4ocOg&usqp=CAU');
-            width: 100vw;
-            height: 20vh;
-        }
-        .d{
-            width: 15vw;
-            margin: 10vh;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
     <header>
         <nav>
-                <div id="img"><img id="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyiflEr-YdIvk4R5CZia7_9P0ENlmAyU-9FA&usqp=CAU" alt="img icon"></div>
+            <p class="logo">Intern Crowd</p>
+            <div class="search">
+                <input type="text">
+                <button class="btn">Search</button>
+
+            </div>
             <ul>
-                <li class="li1">Home</li>
-                <li class="li1">About</li>
-                <li class="li1">Contact</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="img"></div>
-        <div class="left"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMJ205-1Hf_P3Ui0P4TuBNzYsOvr3EMBDpQ10O02y8cP3EQ36xw0pfxEmqSCf_MNJJK8&usqp=CAU" alt=""></div>
-        <div class="middle"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEG6eGOYs-iGwKJLNt4NU7kYQOYwS9dW6LCg&usqp=CAU" alt=""></div>
-        <div class="right"><img class="d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WXLdKwTn08gPdsTpA9BiNkVLGUHJ09uTRZaJdvgCJRKMhmoOuM5WpDH-yN0ita5s-DY&usqp=CAU" alt=""></div>
-    </div>
-    </div>
+    <main class="container">
+        <div class="slider">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+        </div>
+        <div class="card">
+            <h2 class="my-2">Internships we provide</h2>
+            <div class="cards">
+                <div class="card-items">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Web Development</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8amF2YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Java Development</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://images.unsplash.com/photo-1521939094609-93aba1af40d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFuZHJvaWQlMjBkZXZlbG9wbWVudCUyMHdvcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Android Development</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://media.istockphoto.com/id/1318623693/photo/cloud-computing.jpg?b=1&s=170667a&w=0&k=20&c=9x_kJ9C6TkB7eVg-yOgiRrPL0ivgFoQVV41XOWoqcQ0="
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Cloud Computing</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YyUyRmMlMkIlMkIlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">C/C++ Development</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="my-2">Jobs we provide</h2>
+            <div class="cards">
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?coder human"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Web Developer</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?coding"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Java Developer</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?coder job"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Android Developer</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?developer"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Cloud Computing Engineer</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?coder"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">C/C++ Developer</div>
+                        <p class="text-center" class="my-1">Min 20 Hiring</p>
+                        <p class="text-center" class="my-1">Apply now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="my-2">Our Centers</h2>
+            <div class="cards">
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?office"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Office 1</div>
+                        <p class="text-center" class="my-1">20 Emploies</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?working place"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Office 2</div>
+                        <p class="text-center" class="my-1">30 Emploies</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?offiices"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Office 3</div>
+                        <p class="text-center" class="my-1">30 Emploies</p>
+                    </div>
+                </div>
+                <div class="card-items">
+                    <img src="https://source.unsplash.com/160x170/?working office"
+                        alt="" width="160px" height="170px">
+                    <div class="lines">
+                        <div class="text-center" class="my-1">Office 4</div>
+                        <p class="text-center" class="my-1">10 Hiring</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="all-center">
+        <p>Copyright &copy; Intern Crowd</p>
+    </footer>
 </body>
+
 </html>
